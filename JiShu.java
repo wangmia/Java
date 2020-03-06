@@ -4,9 +4,7 @@ import java.util.Scanner;
 class JiShu {
     public static void main(String[] args) {
         int [] number = new int[10];
-        int [] shu = new int[10];
-        int x = 1;
-        shu[0] = 51;
+              
         Scanner input = new Scanner(System.in);
         System.out.println("请输入十个数");
         for (int i = 0; i < 10; i++) {
@@ -14,25 +12,43 @@ class JiShu {
             number[i] = id;
         }
         for (int i = 0; i < 10; i++) {
-            if (shu[0] != number[i]) {
-                for (int j = i + 1; j < 10; j++) {
-                    if (number[i] == number[j]) {
-                        i++;
-                        int temp;
-                        temp = number[i];
-                        number[i] = number[j];
-                        number[j] = temp;
-                        i--;
-                    }
-
+            for (int j = i + 1; j < 10; j++) {
+                if (number[i] == number[j]) {
+                    i++;
+                    int temp;
+                    temp = number[i];
+                    number[i] = number[j];
+                    number[j] = temp;
+                    i--;
                 }
             }
-
-            shu[0] = number[i];
+        }
+        // System.out.println("------------");
+        // for (int i = 0; i < 10; i++) {
+        //     System.out.println(number[i]);
+        // }
+        System.out.println("------------");
+        int i = 0;
+        int num = 1;
+        while (i<9) {
+            
+            if (number[i] == number[i + 1]) {
+                num++;
+            } else {
+                if (i + 1 == 9 && num == 1) {
+                    System.out.println(number[i] + "出现了" + num + "次");
+                } else {
+                    System.out.println(number[i] + "出现了" + num + "次");
+                }
+                num = 1;
+            }
+            i++;
         }
 
-        // for(int i=0;i<10;i++){
-        // 	System.out.println(shu[i]);
+
+
+        // for (int i = 0; i < 10; i++) {
+        //     System.out.println(number[i]);
         // }
 
     }
