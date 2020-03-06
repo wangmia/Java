@@ -42,7 +42,11 @@ class JiShu {
             }
             
             if (i == 8) {
+            		if(num==1){
+            			System.out.println(number[i+1] + "出现了" + num + "次");
+            		}else{
                     System.out.println(number[i] + "出现了" + num + "次");
+                	}
                 }
             i++;
         }
