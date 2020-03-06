@@ -23,10 +23,10 @@ class JiShu {
                 }
             }
         }
-        // System.out.println("------------");
-        // for (int i = 0; i < 10; i++) {
-        //     System.out.println(number[i]);
-        // }
+        System.out.println("------------");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(number[i]);
+        }
         System.out.println("------------");
         int i = 0;
         int num = 1;
@@ -35,13 +35,15 @@ class JiShu {
             if (number[i] == number[i + 1]) {
                 num++;
             } else {
-                if (i + 1 == 9 && num == 1) {
+                 
                     System.out.println(number[i] + "出现了" + num + "次");
-                } else {
-                    System.out.println(number[i] + "出现了" + num + "次");
-                }
+                
                 num = 1;
             }
+            
+            if (i == 8) {
+                    System.out.println(number[i] + "出现了" + num + "次");
+                }
             i++;
         }
 
