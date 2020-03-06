@@ -5,3 +5,5 @@ class P2 {
         System.out.println("x=" + x + ",y=" + y);
     }
 }
+// 分析 y = 4 + 6 + 60
+// 结果 x=6,y=70

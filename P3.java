@@ -5,4 +5,4 @@ class P3 {
         b = b + 1;
     }
 }
-// 错误：int型转化为byte型会you损失
+// 错误：int型转化为byte型会有损失，如要结果可强转b=(byte)(b+1)

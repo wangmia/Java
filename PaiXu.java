@@ -13,10 +13,9 @@ class PaiXu {
         for (int i = 9; i >= 0; i--) {
             for (int j = 0; j <= i - 1; j++) {
                 if (str[j].length() < str[j + 1].length()) {
-                    String [] temp = new String[1];
-                    temp[0] = str[j + 1];
+                    String  temp  = str[j + 1];
                     str[j + 1] = str[j];
-                    str[j] = temp[0];
+                    str[j] = temp;
                 }
             }
         }
