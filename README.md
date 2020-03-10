@@ -7,3 +7,4 @@
 5-循环+数组练习 --> src/four/Fi*
 类的练习 Car 和 TestCar --> src/.../club  
 封装 --> src/object 
+static ---> src/statie 没做完
