@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /* 1.从键盘输入一个班5个学生的分数，求和并输出 */
 public class T1 {
-    public static void main(String[] args) {
+    public statie void main(String[] args) {
         int [] student = new int[5];
         int sum=0;
         Scanner sc = new Scanner(System.in);

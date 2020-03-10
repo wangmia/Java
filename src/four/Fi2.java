@@ -9,7 +9,7 @@ import java.util.Scanner;
 			最后将第一位和最后一位数字交换。 请任意给定一个小于8位的整数，
 			然后，把加密后的结果在控制台打印出来 */
 public class Fi2 {
-    public static void main(String[] args) {
+    public statie void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [] number = new int[8];
         System.out.println("请输入数据");

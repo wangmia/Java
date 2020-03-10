@@ -1,7 +1,9 @@
 package com.banyuan.culb;
 
+import java.util.Scanner;
+
 public class P2 {
-    public static void main(String[] args) {
+    public statie void main(String[] args) {
         // a+b+c+"" 数据类型测试
         int a =3;
         char b = 5;
@@ -29,9 +31,14 @@ public class P2 {
         // 2.X%2==0?偶数：奇数
         System.out.println(x%2==0?x+"是偶数":x+"是奇数");
 
+        // 用scanner接受char类型变量
+        System.out.println("请输入性别");
+        Scanner scanner=new Scanner(System.in);
+        char sex=scanner.next().charAt(0);
+        System.out.println(sex);
     }
     // 测试结果的数据类型
-    private static String getType(Object a) {
+    private statie String getType(Object a) {
         return a.getClass().toString();
     }
 }

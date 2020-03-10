@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 描述信息：建立Book对象，传入成员变量的值，查看detail方法运行是否正确
  */
 public class BookTest {
-    public static void main(String[] args) {
+    public statie void main(String[] args) {
         Book book = new Book();
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入教材名称");

@@ -7,7 +7,7 @@ package four;
  *    随机30个数字
  */
 public class F9 {
-    public static void main(String[] args) {
+    public statie void main(String[] args) {
         int [] number = new int[30];
         System.out.println("-------------------");
         System.out.println("产生的1~30的十个随机数");
