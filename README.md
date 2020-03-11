@@ -8,3 +8,11 @@
 类的练习 Car 和 TestCar --> src/.../club  
 封装 --> src/object 
 static ---> src/statie 没做完
+6. 继承
+> 1. --> src/inherit/Rectangle.java
+> 2~4. --> src/inherit/Test.java
+> 5. --> src/intherit/Person,Student,StudentLeader,Worker.java
+> 6. --> src/intherit/Vehicle.java
+> 选择题 --> src/选择题.md 
+> 编程题 --> src/inherit/Account,Coustomer,TestCoustomer.java
+
