@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /* 3.输入一批整数，使用循环求出最大值与最小值，输入0时结束。 */
 public class T3 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [] number = new int[50];
         number[0] = 1;

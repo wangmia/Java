@@ -9,7 +9,7 @@ package four;
  *  5
  */
 public class F3 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         int [] tu = {5,4,3,2,1};
         for(int i=5;i>0;i--){
             for(int j=0;j<i;j++){

@@ -6,7 +6,7 @@ import java.util.Scanner;
  *  先判断正负，然后除二取余存于数组，最后输出
  *  */
 public class T2 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // 存储整数除以二的余数
         int [] yu = new int[32];

@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 	输出格式：两个整数，第一个整数表示读入数据中的奇数的个数，第二个整数表示读入数据中的偶数的个数。两个整数之间以空格分隔。
  */
 public class Fi1 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [] number = new int[100000];
         int n=0;

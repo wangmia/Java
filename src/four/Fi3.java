@@ -9,7 +9,7 @@ package four;
  * 第四季度：11,66,99
  */
 public class Fi3 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         int money1 = 22+66+44;
         int money2 = 77+33+88;
         int money3 = 22+45+65;

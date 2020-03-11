@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
 
         // 1.手动输入任意三个数，求三个数的和，差
         Scanner sc=new Scanner(System.in);
@@ -126,7 +126,7 @@ public class Main {
         // 可以用英文字符和数字下划线美元符号汉子等字符命名，且区分大小写,必须以$、_、英文字符开头
 
     }
-    public statie void ceshi(){
+    public static void ceshi(){
         int i=1,j=0;
 
         float f1=0.1f;

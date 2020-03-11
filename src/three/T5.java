@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /* 请输入一个任意年份,判断是否是闰年 */
 public class T5 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
         if(year%400==0||(year%4==0&&year%100!=0)){

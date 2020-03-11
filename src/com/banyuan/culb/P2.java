@@ -3,7 +3,7 @@ package com.banyuan.culb;
 import java.util.Scanner;
 
 public class P2 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         // a+b+c+"" 数据类型测试
         int a =3;
         char b = 5;
@@ -38,7 +38,7 @@ public class P2 {
         System.out.println(sex);
     }
     // 测试结果的数据类型
-    private statie String getType(Object a) {
+    private static String getType(Object a) {
         return a.getClass().toString();
     }
 }

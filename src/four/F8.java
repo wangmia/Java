@@ -2,7 +2,7 @@ package four;
 
 /* 在一个数组中找出最大和最小值，并输出它们的位置 */
 public class F8 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         int [] number = {5,9,1,2,6,7,5,0,7,3};
         int max = number[0];
         int min = number[0];

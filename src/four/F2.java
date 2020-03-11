@@ -2,7 +2,7 @@ package four;
 
 /* 输入三个班，每班10个学生的成绩，求每个班的总分和平均分 */
 public class F2 {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         int [] Cj1 = {21,22,23,24,25,26,27,28,29,10};
         int [] Cj2 = {33,77,99,100,55,9,70,50,60,66};
         int [] Cj3 = {44,55,66,77,88,99,100,45,78,90};

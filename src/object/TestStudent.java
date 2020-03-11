@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 描述信息：测试成绩
  */
 public class TestStudent {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         // 定义学生类数组

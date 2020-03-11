@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 描述信息：作业2，测试
  */
 public class PeopleTest {
-    public statie void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         People people = new People();
         people.setName("张三");
