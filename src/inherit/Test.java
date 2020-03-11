@@ -5,9 +5,6 @@ package inherit;
  * @date 2020/3/11 7:31 下午
  * 描述信息：
  */
-public class lianxi {
-
-}
 /* 第二题 */
 class A {
     int i = 1;
@@ -25,39 +22,41 @@ class B extends A {
 //    }
 }
 
-//  结果为1
+//  结果为1      在子类里调用父类的方法，方法并未重写还是父类里的方法，父类里的值是1 ，所以结果为1
 
 /* 第三题 */
-class Test {
-//    public static void main(String[] args) {
-//        new Circle();
+//class Test {
+//      public static void main(String[] args) {
+//          new Circle();
+//      }
+//}
+//class Draw {
+//    public Draw(String type) {
+//        System.out.println(type+" draw constructor");
 //    }
-}
-class Draw {
-    public Draw(String type) {
-        System.out.println(type+" draw constructor");
-    }
-}
-class Shape {
-    private Draw draw = new Draw("shape");
-    public Shape(){
-        System.out.println("shape constructor");
-    }
-}
-class Circle extends Shape {
-    private Draw draw = new Draw("circle");
-    public Circle() {
-        System.out.println("circle constructor");
-    }
-}
+//}
+//class Shape {
+//    private Draw draw = new Draw("shape");
+//    public Shape(){
+//        System.out.println("shape constructor");
+//    }
+//}
+//class Circle extends Shape {
+//    private Draw draw = new Draw("circle");
+//    public Circle() {
+//        System.out.println("circle constructor");
+//    }
+//}
 
 // 结果为：shape draw constructor
 //        shape constructor
-//        circle draw constructor        *
+//        circle draw constructor
 //        circle constructor
+// 在执行子类之前先把父类执行，建一个Draw类的对象，然后是父类的无参构造函数执行，
+// 然后在执行子类的构造方法，然后在执行在子类里创建的Draw类的对象的构造方法
 
 /* 第四题 */
-class Test {
+public class Test {
     public static void main(String[] args) {
         Shape shape = new Circle();
         System.out.println(shape.name);
@@ -89,3 +88,9 @@ class Circle extends Shape {
         System.out.println("circle");
     }
 }
+// 结果为 shape constructor
+//       circle constructor
+//       shape
+//       this is circle
+//       shape
+// 不太懂，麻烦老师讲一下
