@@ -7,20 +7,18 @@ package statie;
  * 没做完
  */
 public class Questions {
-    private int number;
-    private String title;
-    private String anwserA ;
-    private String anwserB ;
-    private String anwserC ;
-    private String anwserD ;
-    private String Anwwser;
+    private static int  number;
+    private static String title ;
+    private static String anwserA = "a" ;
+    private static String anwserB = "b";
+    private static String anwserC = "c" ;
+    private static String anwserD = "d" ;
+    private static String Anwwser;
 
     public void setNumber(int number) {
         this.number = number;
     }
-    public void setTitle(String title) {
-        this.title = title;
-    }
+
     public void setAnwserA(String anwserA) {
         this.anwserA = anwserA;
     }
@@ -35,6 +33,9 @@ public class Questions {
     }
     public void setAnwwser(String anwwser) {
         Anwwser = anwwser;
+    }
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public int getNumber() {
@@ -59,7 +60,19 @@ public class Questions {
         return Anwwser;
     }
 
-    public String toQustions(){
-        return number+'.'+title+'\n'+"A "+anwserA+" B "+anwserB+" C "+anwserC+" D "+anwserD;
-    }
+//    // 输出题目
+//    public String toQustions(){
+//        return number+'.'+title+'\n'+"A. "+anwserA+" B. "+anwserB+" C. "+anwserC+" D. "+anwserD;
+//    }
+//    // 比较答案
+//    public int bijiao(String  a){
+//        int c;
+//        if(a.equals(Anwwser)){
+//            c = 1;
+//        }else{
+//            c = 0;
+//        }
+//        return c;
+//    }
+
 }
