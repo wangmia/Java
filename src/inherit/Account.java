@@ -8,7 +8,7 @@ package inherit;
  * 需要判断用户余额是否能够满足提款数额的要求,如果不能,应给出提示。
  */
 public class Account {
-    private int id;  // 账号
+    static int id;  // 账号
     private double balance;  // 余额
     private double annulInterestRate;  // 年利率
 

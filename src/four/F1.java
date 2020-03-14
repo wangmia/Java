@@ -1,5 +1,7 @@
 package four;
 
+import inherit.Account;
+
 import java.util.Scanner;
 
 /* 1.任意输入 n行 n列的乘法口诀表 */

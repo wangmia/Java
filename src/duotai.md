@@ -34,7 +34,7 @@ A．a0、a1、a2、a3            B．a[0]、a[1]、a[2]、a[3]
 C．a[1]、a[2]、a[3]、a[4]    D．a[0]、a[1]、a[2]、a[3]、a[4]
 8．下面哪个选项正确地声明了一个字符串数组 （ C ）
 A．char[] str     B．char[][] str     C．String[] str      D．String[10] str
-9、假设有这样的数组创建：int a[]={1,2,3,4,5,6,7};则该数组长度为 ( C )。
+9、假设有这样的数组创建：int a[]={1,2,3,4,5,6,7};则该数组长度为 ( D )。
 A．4   B．5  C．6  D．7
 10、下列二维数组的创建中错误的是( D )。
 A．int a[][]=new int[3][] ; 
@@ -80,7 +80,7 @@ D．public int x(){…}
 18．构造方法在（ D ）时被调用。
 A．类定义时          B．使用对象的变量时
 C．调用对象方法时     D．创建对象时
-19．下列哪个类声明是正确的（ D ）。
+19．下列哪个类声明是正确的（ A ）。
 A．public abstract class Car{…} 
 B．abstract private move(){…}
 C．protected private number;    
@@ -97,7 +97,7 @@ class Person{
 	public Person(String n, String d, int a ){
 	//doing the same as two arguments version if constructer
 }
-下面那个选项可以添加到// doing the same……处（   A ）
+下面那个选项可以添加到// doing the same……处（  C  ）
 A．Person(n,a) 
 B．this(Person(n,a))
 C．this(n,a)//调用的是第二个有参构造函数
@@ -122,7 +122,7 @@ public class Test{
 	System.out.println(a[6]);
 }
 }
-哪一个选项是正确的（  B  ）。
+哪一个选项是正确的（  C  ）。
 A．不输出任何内容      	B．输出0
 C．当编译时有错误出现    	D．当运行时有错误出现  
 26关键字（ B ）表明一个对象或变量在初始化后不能修改。
@@ -170,7 +170,7 @@ A．Employee e=new  Manager();
 B．Director d=new  Manager();
 C．Director d =new  Employee ();  
 D．Manager m=new  Director ();
-31．接口是Java面向对象的实现机制之一，以下说法正确的是（ B ）。
+31．接口是Java面向对象的实现机制之一，以下说法正确的是（ A ）。
 A．Java支持多重继承，一个类可以实现多个接口
 B．Java只支持单重继承，一个类可以实现多个接口
 C．Java只支持单重继承，一个类可以实现一个接口  
@@ -264,7 +264,7 @@ A．class Son implements Father
 B．class Father implements Son
 C．class Father extends Son
 D．class Son extends Father 
-45、重载指的是方法具有相同的名字，但这些方法的参数必须不同。下列哪种说法不属于方法参数的不同( D )
+45、重载指的是方法具有相同的名字，但这些方法的参数必须不同。下列哪种说法不属于方法参数的不同( C )
 A．形式参数的个数不同。
 B．形式参数的类型不同。
 C．形式参数的名字不同。
@@ -291,12 +291,12 @@ public static void main(String[] args) {
 	}
 }
 A．1   B．2     C．3      D．4
-48、关于接口的定义和实现，以下描述正确的是( A )
+48、关于接口的定义和实现，以下描述正确的是( D )
 A．接口定义的方法只有定义没有实现
 B．接口定义中的变量都必须写明final和static
 C．如果一个接口由多个类来实现，则这些类在实现该接口中的方法时采用统一的代码
 D．如果一个类实现接口，则必须实现该接口中的所有方法，但方法未必申明为public
-49.char类型的整数范围是（ C ）
+49.char类型的整数范围是（ B ）
 A. 0 ... 32767 
 B. 0 ... 65535 
 C. –256 ... 255 
