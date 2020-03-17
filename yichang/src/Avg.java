@@ -2,8 +2,8 @@ package PACKAGE_NAME;
 
 /**
  * @author WM
- * @date 2020/3/17 7:01 下午
+ * @date 2020/3/17 8:09 下午
  * 描述信息：
  */
-public class fen {
+public class Avg {
 }
