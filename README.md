@@ -16,3 +16,5 @@ static ---> src/statie 没做完
 > 选择题 --> src/选择题.md 
 > 编程题 --> src/inherit/Account,Coustomer,TestCoustomer.java
 多太 --> src/duotai.md
+异常 --> yichang/src
+
