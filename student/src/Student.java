@@ -4,30 +4,29 @@
  * 描述信息：1.学生类,学生编号,学生姓名,学生密码,学生成绩
  */
 public class Student {
-    private int stuId;
-    private String stuName = "张三";
-    private int stuPassword;
+    private String stuId;
+    private String stuName ;
+    private String stuPassword;
     private int stuResult;
 
-//    public Student(int stuId, String stuName, int stuPassword) {
-//        this.stuId = stuId;
-//        this.stuName = stuName;
-//        this.stuPassword = stuPassword;
-//    }
 
-    public void setStuName(String stuName) {
-        this.stuName = stuName;
-    }
-
-    public void setStuesult(int stuesult) {
-        this.stuResult = stuesult;
-    }
-    public void setStuPassword(int stuPassword) {
-        this.stuPassword = stuPassword;
-    }
-
-    public void setStuId(int stuId) {
+    public Student(String stuId, String stuName, String stuPassword,int stuResult) {
         this.stuId = stuId;
+        this.stuName = stuName;
+        this.stuPassword = stuPassword;
+        this.stuResult = stuResult;
+    }
+
+    public String getStuId() {
+        return stuId;
+    }
+
+    public String getStuPassword() {
+        return stuPassword;
+    }
+
+    public void setStuResult(int stuResult) {
+        this.stuResult = stuResult;
     }
 
     @Override
@@ -36,7 +35,7 @@ public class Student {
                 "stuId=" + stuId +
                 ", stuName='" + stuName + '\'' +
                 ", stuPassword=" + stuPassword +
-                ", stuesult=" + stuResult +
+                ", stuResult=" +stuResult +
                 '}';
     }
 }
