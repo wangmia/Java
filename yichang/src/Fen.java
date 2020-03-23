@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * @author WM
  * @date 2020/3/17 7:01 下午
@@ -5,7 +7,28 @@
  */
 public class Fen {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        try{
+            System.out.println("请输入您的分数:");
+            int score = sc.nextInt();
+            if (score < 0 || score > 100) {
+                throw new ZiException("分数必须在0—100之间");
+            }
+            System.out.println("分数为：" + score);
 
+        }catch (ZiException e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
     }
 
+}
+
+class ZiException extends Exception{
+    public ZiException() {
+    }
+
+    public ZiException(String message) {
+        super(message);
+    }
 }
