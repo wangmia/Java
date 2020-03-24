@@ -1,5 +1,6 @@
 # Java
 
+fanxing/src 泛型
 1-基础练习  --> src/.../club/Main.java  
 2-基础练习  --> src/.../club/2-基础练习.md  代码测试  P2.java
 3-基础练习  --> src/three/  
@@ -17,4 +18,5 @@ static ---> src/statie 没做完
 > 编程题 --> src/inherit/Account,Coustomer,TestCoustomer.java
 多太 --> src/duotai.md
 异常 --> yichang/src
+集合 --> jihe/src
 
