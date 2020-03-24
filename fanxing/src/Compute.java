@@ -16,7 +16,10 @@ public class Compute<T extends Number> {
         T min = t[0];
         for(int i=0;i<t.length;i++){
             // compareTo 返回两者的比较，前者比后者大就返回1，相等返回0，前者比后者小返回-1
-            if(min.toString().compareTo(t[i].toString())>0){
+//            if(min.toString().compareTo(t[i].toString())>0){
+//                min = t[i];
+//            }
+            if(min.doubleValue()>t[i].doubleValue()){
                 min = t[i];
             }
         }
@@ -26,7 +29,10 @@ public class Compute<T extends Number> {
     public T max(){
         T max = t[0];
         for(int i=0;i<t.length;i++){
-            if(max.toString().compareTo(t[i].toString())<0){
+//            if(max.toString().compareTo(t[i].toString())<0){
+//                max = t[i];
+//            }
+            if(max.doubleValue()<t[i].doubleValue()){
                 max = t[i];
             }
         }
@@ -35,7 +41,7 @@ public class Compute<T extends Number> {
 
     public double avg(){
 //        int length = t.length;
-        double sum = 0.0;
+        Double sum = 0.0;
         for (int i = 0; i < t.length; i++) {
             sum += t[i].doubleValue();
         }
@@ -44,8 +50,8 @@ public class Compute<T extends Number> {
 }
 class test{
     public static void main(String[]args){
-        Integer [] ams = {1,5,9,7,6};
-        Double [] dou = {7.9,9.0,5.5,7.6,3.7};
+        Integer [] ams = {1,5,9,7,6,322};
+        Double [] dou = {7.9,9.0,5.5,7.6,500.7};
         int [] co = {12,3,4};
         Compute compute1 = new Compute(ams);
         System.out.println("最大值："+compute1.max());
