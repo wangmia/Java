@@ -30,6 +30,7 @@ public class P3 {
 //                    c[i] = 'L';
 //                }
 //            }
+
             reader.read(c);
             for(int i=0;i<c.length;i++){
                 if(c[i]=='l'){
@@ -37,10 +38,11 @@ public class P3 {
                 }
             }
 
-            writer.write(" ");
-            writer.flush();
-            writer.write(c);
-            writer.flush();
+            file = new File("b/test.txt");
+            new File("b").mkdir();
+            Writer writer1 = new FileWriter(file);
+            writer1.write(c);
+            writer1.flush();
 
         } catch (IOException e) {
             e.printStackTrace();
