@@ -9,28 +9,25 @@ public class P1 extends Thread{
     public P1(String name) {
         super(name);
     }
-//    int [] number = new int[200];
-//    int i = 0;
-        int j = 0;
+    static int j = 0;
+    static int i = 200;
     @Override
     public void run() {
-//
-//        for (int i = 200; i < number.length; i++) {
-//            number[i] = i;
-//        }
-//
-//        if(number[i]%2==1){
-//            System.out.println(i+"-------"+Thread.currentThread().getName());
-//            i++;
-
-//        }
-
-        for(int i=200;i<=400;i++){
-            if(i%2==1){
-                System.out.println(i+"-------"+Thread.currentThread().getName());
-//                System.out.println(j++);
+        while(i<=400){
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            synchronized (P1.class){
+                if(i%2==1&&i<=400){
+                    System.out.println(i+"-------"+Thread.currentThread().getName());
+                    System.out.println(j++);
+                }
+            }
+            i++;
         }
+
     }
 }
 class TestP1{

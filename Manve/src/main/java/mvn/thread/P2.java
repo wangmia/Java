@@ -8,9 +8,24 @@ package mvn.thread;
  */
 public class P2 implements Runnable {
     private static int i = 0;
+
     @Override
     public void run() {
-        System.out.println("<<<--- 恭喜"+Thread.currentThread().getName()+" --->>> 第 "+((i++)+1)+" 个通过一线天");
+        while(i<=10){
+            try {
+                Thread.sleep(1000);
+//                Thread.currentThread().stop();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            synchronized(this){
+                if(i<10){
+                    System.out.println("<<<--- 恭喜"+Thread.currentThread().getName()+" --->>> 第 "+((i++)+1)+" 个通过一线天");
+                }else{
+                    break;
+                }
+            }
+        }
     }
 }
 
