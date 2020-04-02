@@ -1,6 +1,7 @@
 # Java
 
 ## 强化训练三在Manve 里
+## 网络编程在NetMaven 里
 fanxing/src 泛型
 1-基础练习  --> src/.../club/Main.java  
 2-基础练习  --> src/.../club/2-基础练习.md  代码测试  P2.java
